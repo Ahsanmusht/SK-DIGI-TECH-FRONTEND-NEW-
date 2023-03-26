@@ -1,0 +1,575 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Mono:wght@400;500;700&family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Moonrocks&display=swap');
+
+:root{
+    --yellow: #FED000;
+    --white: #fff;
+    --light-white: #aaa;
+    --black: #3d3d3d;
+    --light-black: #4b4b4b;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; padding: 0;
+    border: none; outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+*::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 8rem;
+    scroll-behavior: smooth;
+}
+
+.heading{
+    font-weight: 500;
+    text-align: center;
+    color: var(--white);
+    font-size: 5rem;
+}
+
+.heading span{
+    color: var(--yellow);
+}
+
+.btn{
+    margin-top: 2rem;
+    display: inline-block;
+    border-radius: 5rem;
+    font-size: 1.9rem;
+    padding: 1rem 3rem;
+    color: var(--white);
+    cursor: pointer;
+    background: var(--light-black);
+}
+
+
+.btn:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.yellow{
+    color: var(--yellow);
+}
+
+::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background: var(--yellow);    
+}
+
+
+body{
+    background: var(--black);
+}
+
+section{
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* header section */
+
+.header{
+    position: fixed;
+    background: var(--light-black);
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .3rem .5rem #222;
+}
+
+.header .flex{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .flex .logo{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.header .flex .navbar a{
+    margin-left: 2rem;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.header .flex .navbar .auth{
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 4rem;
+    font-weight: 500;
+    color: var(--black);
+    transition: .4s ease-in-out;
+}
+
+
+.header .flex .navbar .auth:hover{
+    background-color: var(--yellow);
+    color: #fff;
+} 
+
+
+.header .flex .navbar a:hover{
+    color: var(--yellow);
+}
+
+
+#menu-bar{
+    color: var(--yellow);
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-bar.fa-times{
+    transform: rotate(360deg);
+}
+
+#menu-bar:hover{
+    transform: rotate(360deg);
+}
+
+/* home section */
+
+.home{
+    margin-top: 5rem;
+}
+
+.home .row{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; flex-wrap: wrap-reverse;
+}
+
+.home .row .content{
+    flex: 1 1 30rem;
+    text-align: center;
+}
+
+.home .row .content h3{
+    font-size: 8rem;
+    line-height: 1;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.home .row .content p{
+    font-size: 1.5rem;
+    color: var(--light-white);
+}
+
+.home .row .image{
+    flex: 1 1 30rem;
+}
+
+.home .row .image img{
+    width: 100%;
+}
+
+/* features-icon section */
+
+.features-icon .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem ,1fr));
+    align-items: flex-start; gap: 1.5rem;
+}
+
+.features-icon .box-container .box{
+    border-radius: .5rem;
+    background-color: var(--light-black);
+    display: flex; align-items: center;
+    padding: 2rem; justify-content: center;
+    gap: 2rem;
+}
+
+.features-icon .box-container .box i{
+    color: var(--yellow);
+    font-size: 4rem;
+}
+
+.features-icon .box-container .content h3{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    color: var(--white);
+}
+
+.features-icon .box-container .content p{
+    color: var(--light-white);
+    font-size: 1.6rem;
+}
+
+
+/* about section */
+
+.about .row{
+    align-items: center;
+    gap: 1.5rem; flex-wrap: wrap;
+    display: flex;
+}
+
+.about .row .image{
+    flex: 1 1 40rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.about .row .content h3{
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: var(--light-white);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+/* courses section */
+.course-slider{
+    margin-top: 2rem;
+}
+
+
+.courses .slide{
+    background-color: var(--light-black);
+    /* width: 33rem; */
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+    margin-bottom: 6rem;
+    user-select: none;
+}
+
+.courses .slide img{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.courses .slide h3{
+    margin: 1.5rem 0;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.courses .slide p{
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--light-white);
+}
+
+.swiper-pagination-bullet{
+    background-color: var(--yellow) !important;
+    height: 1rem;
+    width: 1rem;
+    border-radius: .3rem;
+}
+
+/* teachers section */
+ .teacher-slider{
+    margin-top: 2rem;
+}
+
+
+.teachers .slide{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 7rem;
+
+    user-select: none;
+}
+
+.teachers .slide img{
+    height: 40rem;
+    width: 100%;
+    object-fit: cover !important;
+    border-radius: .5rem;
+}
+
+.teachers .slide h3{
+    margin-top: 1.5rem;
+    text-align: center;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.teachers .slide .share{
+    position: absolute;
+    right: -10rem; top: 1rem;
+}
+
+.teachers .slide:hover .share{
+    right: 2rem;
+}
+
+.teachers .slide .share a{
+    margin-top: 1rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    display: block;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: .5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.teachers .slide .share a:hover{
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+
+/* reviews section */
+
+.reviews-slider .slide{
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: var(--light-black);
+    border-radius: .5rem;
+     margin-bottom: 6rem;
+    user-select: none;
+}
+
+.reviews-slider .slide p{
+    font-size: 1.6rem;
+    line-height: 2;
+    color: var(--light-white);
+}
+
+.reviews-slider .slide .user{
+    display: flex; 
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+.reviews-slider .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.reviews-slider .slide .user h3{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.reviews-slider .slide .user .stars i{
+    font-size: 1.7rem;
+    color: var(--yellow);
+    margin-top: 1rem;
+}
+
+
+/* addmission section */
+
+.addmission .row{  
+    margin-top: 3rem;
+    flex-wrap: wrap-reverse;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}   
+ 
+.addmission .row .image{
+    flex: 1 1 40rem;
+}
+
+.addmission .row .image img{
+    width: 100%;
+}
+
+.addmission .row form{
+    flex: 1 1 40rem;
+}
+
+.addmission .row form .box{
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    background-color: var(--light-black);
+    color: var(--white); padding: 1.4rem;
+}
+.addmission .row form input::placeholder{
+    color: var(--light-white);
+}
+
+.addmission .row form input[type="date"]{
+    color: var(--light-white);
+}
+
+.addmission .row form span{
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+.addmission .row form .radio{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.addmission .row form .radio label{
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: var(--white);
+    margin-left: .5rem;
+}
+
+.addmission .row form .radio #female{
+    margin-left: 1rem;
+}
+
+.addmission .row form .radio input{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--light-white);
+}
+
+.addmission .row form .radio input:checked{
+    background-color: var(--yellow);
+}
+
+.addmission .row form .radio #female:checked{
+    background-color: var(--yellow);
+}
+
+/* footer section */
+
+.footer{
+    background-color: var(--light-black);
+    text-align: center;
+}
+
+.footer .share a{
+    margin: 1rem .3rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.footer .share a:hover{
+    background-color: var(--yellow);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--white);
+}
+
+.footer .credit span{
+    color: var(--yellow);
+}
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media(max-width:991px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-bar{
+        display: inline-block;
+    }
+
+    .header .flex .navbar{
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        border-bottom: .1rem solid var(--light-white);
+        border-top: .1rem solid var(--light-white);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        background-color: var(--light-black);
+    }
+
+    .header .flex .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .header .flex .navbar a{
+        margin: 2rem;
+        display: block;
+        text-align: center;
+    }
+
+    .home .row .content h3{
+        font-size: 7rem;
+    }
+
+}
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 47%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+}
