@@ -68,7 +68,7 @@ function EditData(id) {
         console.log(jsonRes);
         alert(jsonRes.message);
         setInterval(function () {
-          window.location.href = "/profile.html";
+          window.location.href = "https://ahsanmusht.github.io/SK-DIGI-TECH-FRONTEND-NEW-/profile.html";
         }, 100);
         console.log(jsonRes);
         return;

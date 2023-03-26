@@ -16,7 +16,7 @@ function adminLogin() {
         console.log(jsonRes)
         swal("Good job!", jsonRes.data , "success");
         setInterval(function () {
-          window.location.href = "/Admin-Profile.html";
+          window.location.href = "https://ahsanmusht.github.io/SK-DIGI-TECH-FRONTEND-NEW-/Admin-Profile.html";
         }, 100); 
          console.log(jsonRes);
         return;

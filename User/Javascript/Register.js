@@ -19,7 +19,7 @@ function register() {
         console.log(jsonRes)
         swal("Good job!", jsonRes.data , "success");
         setInterval(function () {
-          window.location.href = "/Login.html";
+          window.location.href = "https://ahsanmusht.github.io/SK-DIGI-TECH-FRONTEND-NEW-/Login.html";
         }, 100); 
          console.log(jsonRes);
         return;
