@@ -1,4 +1,4 @@
-axios.get('https://sk-digi-tech-backend-new-production.up.railway.app/profile').then((result) => {
+axios.get('https://sk-digi-tech-backend-new-production-bdf3.up.railway.app/profile').then((result) => {
   console.log(result.data.user._id);
     document.getElementById('data').innerHTML = `
     
@@ -10,7 +10,7 @@ axios.get('https://sk-digi-tech-backend-new-production.up.railway.app/profile').
 
 
 
-var port = "https://sk-digi-tech-backend-new-production.up.railway.app";
+var port = "https://sk-digi-tech-backend-new-production-bdf3.up.railway.app";
 
 function resetPassword() {
   var obj = {

@@ -1,4 +1,4 @@
-var port = "https://sk-digi-tech-backend-new-production.up.railway.app";
+var port = "https://sk-digi-tech-backend-new-production-bdf3.up.railway.app";
 
 function Forgot() {
   var obj = {

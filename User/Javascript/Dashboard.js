@@ -1,7 +1,7 @@
 
 
 
-axios.get('https://sk-digi-tech-backend-new-production.up.railway.app/admin-profile').then((result) => {
+axios.get('https://sk-digi-tech-backend-new-production-bdf3.up.railway.app/admin-profile').then((result) => {
     document.getElementById('Admin').innerHTML = `
   
     <img src="../Uploads/${result.data.admin.image}" width="40px" height="40px" alt="">
@@ -15,7 +15,7 @@ axios.get('https://sk-digi-tech-backend-new-production.up.railway.app/admin-prof
 })
 
 
-const url = "https://sk-digi-tech-backend-new-production.up.railway.app";
+const url = "https://sk-digi-tech-backend-new-production-bdf3.up.railway.app";
 
 function getData() {
   var showdata = document.getElementById("UserData");
@@ -58,7 +58,7 @@ console.log(arr.length)
 getData();
 
 function delete_data(id) {
-  const url = "https://sk-digi-tech-backend-new-production.up.railway.app";
+  const url = "https://sk-digi-tech-backend-new-production-bdf3.up.railway.app";
   const Http = new XMLHttpRequest();
   Http.open("DELETE", url + `/delete/${id}`);
   Http.setRequestHeader("Content-Type", "application/json");
@@ -105,7 +105,7 @@ function update_data(image, name, email, mobile, is_verified, id){
 
 function update_user(id) {
 
-  const url = "https://sk-digi-tech-backend-new-production.up.railway.app";
+  const url = "https://sk-digi-tech-backend-new-production-bdf3.up.railway.app";
   let obj = {
       name:document.getElementById(`${id}-name`).value,
       email:document.getElementById(`${id}-email`).value,

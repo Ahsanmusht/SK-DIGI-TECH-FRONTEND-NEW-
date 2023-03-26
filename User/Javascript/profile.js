@@ -10,7 +10,7 @@
 // })
 // .catch(err => console.log(err))
 
-axios.get('https://sk-digi-tech-backend-new-production.up.railway.app/profile').then((result) => {
+axios.get('https://sk-digi-tech-backend-new-production-bdf3.up.railway.app/profile').then((result) => {
     console.log(result);
     console.log(result.data.user.image);
    document.getElementById('data').innerHTML = `

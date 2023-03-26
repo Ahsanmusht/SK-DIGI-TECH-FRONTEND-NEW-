@@ -10,7 +10,7 @@
 // })
 // .catch(err => console.log(err))
 
-axios.get('https://sk-digi-tech-backend-new-production.up.railway.app/admin-profile').then((result) => {
+axios.get('https://sk-digi-tech-backend-new-production-bdf3.up.railway.app/admin-profile').then((result) => {
     console.log(result);
    document.getElementById('data').innerHTML = `
    
@@ -28,7 +28,7 @@ axios.get('https://sk-digi-tech-backend-new-production.up.railway.app/admin-prof
 });
 
 
-axios.get('https://sk-digi-tech-backend-new-production.up.railway.app/admin-profile').then((result) => {
+axios.get('https://sk-digi-tech-backend-new-production-bdf3.up.railway.app/admin-profile').then((result) => {
 
     document.getElementById('lists').innerHTML = `
  
@@ -59,7 +59,7 @@ axios.get('https://sk-digi-tech-backend-new-production.up.railway.app/admin-prof
 
 
 
-axios.get('https://sk-digi-tech-backend-new-production.up.railway.app/admin-profile').then((result) => {
+axios.get('sk-digi-tech-backend-new-production-bdf3.up.railway.app/admin-profile').then((result) => {
     document.getElementById('adminName').innerHTML = `
     
     <p>${result.data.admin.name}</p>
